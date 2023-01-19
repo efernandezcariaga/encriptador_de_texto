@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;}
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    margin-top: 40px;
+    margin-left: 84px;
+}
+
+.encriptador_texto{
+    /* Rectangle */
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    /* White */
+    background: #FFFFFF;
+    
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+
+
+footer{
+    width: 100%; height: 5%;
+    text-align: center;        
+    position: absolute; bottom: 0;
+    color: black;
+}
