@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENCRIPTADOR / DESENCRIPTADOR</title>
+    <title>Encriptador de texto</title>
 
-    <link rel="stylesheet" href="/Challenges/Encriptador:Desencriptador/style.css">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
-<header>
-    <img src="/Challenges/Encriptador:Desencriptador/Imagenes/Vector.png" alt="logo">
-</header>
-
 <body>
-    <section class="textos">
-    <div class="textos_ingresoTexto">
-        <textarea name="" class="text-area" placeholder="Ingrese su texto aqui" cols="30" rows="10"></textarea>
-    </div>
+    <header class="logo">
+        <img src="Imagenes/Vector.png" alt="logo">
+    </header>
 
-    <p class="textos_pauta"> <img src="/Challenges/Encriptador:Desencriptador/Imagenes/exclamacion.png" alt="exclamacion"> Solo letras minusculas y sin acentos </p>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"> <img src="Imagenes/exclamacion.png" alt="exclamacion"> Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea cols="20" rows="10" class="mensaje"></textarea>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
 
-    <div class="textos_botones">
-        <button class="btnEncriptar" id="encriptar"> Encriptar </button>
-        <button class="btnDesencriptar" id="desencriptar"> Desencriptar </button>
-        
-    </div>
-    </section>
-
-    <section class="encriptador_contenedor">
-    <div class="encriptador_texto">
-        <img src="/Challenges/Encriptador:Desencriptador/Imagenes/Muñeco.png" class="encriptador_imagen" alt="muñeco">
-        <h3 class="encriptador_titulo">Ningun mensaje fue encontrado</h3>
-        <p class="encriptador_parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
-        <button class="btnCopiar" id="copiar"> Copiar </button>
-    </div>
-
-    </section>
+    <footer class="footer_contenedor">
+        <p class="footer_texto">- Todos los derechos reservados -</p>
+    </footer>
 </body>
-
-<footer class="footer_contenedor">
-    <p class="footer_texto">- Todos los derechos reservados -</p>
-</footer>
 
 </html>
