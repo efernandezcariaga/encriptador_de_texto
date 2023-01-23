@@ -22,7 +22,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="seccion-izq">
             <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
                 <h6 class="informacion"> <img src="Imagenes/exclamacion.png" alt="exclamacion"> Solo letras minusculas y sin acentos</h6>
@@ -32,12 +32,26 @@
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
-        <section>
-            <textarea cols="20" rows="10" class="mensaje"></textarea>
-            <div>
-                <button class="copiar">Copiar</button>
+        
+        
+        <section class="seccion-der">
+            <div class="mensaje">
+                <div class="img">
+                    <img src="Imagenes/Muñeco.png" alt="muñeco">
+                </div>
+                <div class="msj-default">
+                    <h3>Ningun mensaje fue encontrado</h3>
+                    <p>Ingrese el texto que desee encriptar o desencriptar</p>
+                </div>
+                
+
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
             </div>
         </section>
+
+        
     </main>
 
     <footer class="footer_contenedor">

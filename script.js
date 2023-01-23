@@ -1,5 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
+const informacion = document.querySelector(".informacion")
 
 // a --> ai
 // e --> enter
@@ -9,15 +10,30 @@ const mensaje = document.querySelector(".mensaje");
 
 const matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
+function ocultar(elemento){
+    document.querySelector(".elemento").style.display = "none"
+}
+
+function mostrar(elemento){
+    document.querySelector(".elemento").style.display = "block"
+}
+
+function copiar(){
+    mensaje.select();
+    mensaje.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+}
+
 function btnEncriptar(){
     const encriptacion = encriptar(textArea.value);
-    if(isValid(encriptacion)){
+    if(isValid(encriptacion) && encriptacion != ""){
         mensaje.value = encriptacion;
         textArea.value = "";
         mensaje.style.backgroundImage = "none";
+        informacion.style.color = "green";
     }
     else{
-        //VER QUE HACER PARA QUE RESALTE LA PARTE DE QUE NO SE PUEDEN PONER CARACTERES ESPECIALES NI ACENTOS
+        informacion.style.color = "red";
     }
 }
 
@@ -33,8 +49,14 @@ function encriptar(textoEncriptado){
 
 function btnDesencriptar(){
     const desencriptacion = desencriptar(textArea.value);
-    mensaje.value = desencriptacion;
-    textArea.value = "";
+    if(isValid(desencriptacion) && desencriptacion != ""){
+        mensaje.value = desencriptacion;
+        textArea.value = "";
+        informacion.style.color = "green";
+    }
+    else{
+        informacion.style.color = "red";
+    }
 }   
 
 function desencriptar(textoDesencriptado){
