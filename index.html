@@ -23,13 +23,15 @@
         </header>
 
         <section class="seccion-izq">
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div>
-                <h6 class="informacion"> <img src="Imagenes/exclamacion.png" alt="exclamacion"> Solo letras minusculas y sin acentos</h6>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            <div class="input-container">
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="mensaje">
+                    <h6 class="informacion"> <img src="Imagenes/exclamacion.png" alt="exclamacion"> Solo letras minusculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
             </div>
         </section>
             
@@ -44,22 +46,17 @@
                     <p>Ingrese el texto que desee encriptar o desencriptar</p>
                 </div>
 
-                <div class="contenedor-btn-copiar">
-                    <button class="copiar" onclick="copiar()">Copiar</button>
-                </div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
             </div>
-
-            
         </section>
 
 
-        <footer class="footer-contenedor">
-            <p class="footer-texto">- Todos los derechos reservados -</p>
-        </footer>
+
     </main>
 
- 
-
+    <footer class="footer-contenedor">
+        <p class="footer-texto">- Todos los derechos reservados -</p>
+    </footer>
 
 <script src="script.js"></script>
 
