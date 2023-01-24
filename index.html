@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <header class="logo">
-        <img src="Imagenes/Vector.png" alt="logo">
-    </header>
-
     <main>
+        <header class="logo">
+            <img src="Imagenes/Vector.png" alt="logo">
+        </header>
+
         <section class="seccion-izq">
             <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
@@ -32,31 +32,33 @@
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
-        
-        
+            
+            
         <section class="seccion-der">
-            <div class="mensaje">
-                <div class="img">
+            <div class="centro">
+                <div class="foto">
                     <img src="Imagenes/Muñeco.png" alt="muñeco">
                 </div>
-                <div class="msj-default">
+                <div class="msj">
                     <h3>Ningun mensaje fue encontrado</h3>
                     <p>Ingrese el texto que desee encriptar o desencriptar</p>
                 </div>
-                
 
-                <div>
+                <div class="contenedor-btn-copiar">
                     <button class="copiar" onclick="copiar()">Copiar</button>
                 </div>
             </div>
+
+            
         </section>
 
-        
+
+        <footer class="footer-contenedor">
+            <p class="footer-texto">- Todos los derechos reservados -</p>
+        </footer>
     </main>
 
-    <footer class="footer_contenedor">
-        <p class="footer_texto">- Todos los derechos reservados -</p>
-    </footer>
+ 
 
 
 <script src="script.js"></script>
