@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".text-area");
-const mensaje = document.querySelector(".mensaje");
-const informacion = document.querySelector(".informacion")
+const mensaje = document.querySelector(".cajaMensaje");
+const informacion = document.querySelector(".informacion");
 
 // a --> ai
 // e --> enter
@@ -11,14 +11,14 @@ const informacion = document.querySelector(".informacion")
 const matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
 function ocultar(elemento){
-    document.querySelector(".elemento").style.display = "none"
+    document.querySelector(elemento).style.display = "none";
 }
 
 function mostrar(elemento){
-    document.querySelector(".elemento").style.display = "block"
+    document.querySelector(elemento).style.display = "block";
 }
 
-function copiar(){
+function copiarTexto(){
     mensaje.select();
     mensaje.setSelectionRange(0, 99999);
     document.execCommand('copy');
@@ -27,7 +27,7 @@ function copiar(){
 function btnEncriptar(){
     const encriptacion = encriptar(textArea.value);
     if(isValid(encriptacion) && encriptacion != ""){
-        mensaje.value = encriptacion;
+        mensaje.innerHTML = encriptacion;
         textArea.value = "";
         mensaje.style.backgroundImage = "none";
         informacion.style.color = "green";
@@ -50,7 +50,7 @@ function encriptar(textoEncriptado){
 function btnDesencriptar(){
     const desencriptacion = desencriptar(textArea.value);
     if(isValid(desencriptacion) && desencriptacion != ""){
-        mensaje.value = desencriptacion;
+        mensaje.innerHTML = desencriptacion;
         textArea.value = "";
         informacion.style.color = "green";
     }
