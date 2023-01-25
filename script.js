@@ -21,7 +21,7 @@ function mostrar(elemento){
 function copiarTexto(){
     mensaje.select();
     mensaje.setSelectionRange(0, 99999);
-    document.execCommand('copy');
+    navigator.mensaje.writeText(mensaje.value);
 }
 
 function btnEncriptar(){
@@ -29,8 +29,8 @@ function btnEncriptar(){
     if(isValid(encriptacion) && encriptacion != ""){
         mensaje.innerHTML = encriptacion;
         textArea.value = "";
-        mensaje.style.backgroundImage = "none";
         informacion.style.color = "green";
+        mostrar(".copiar"); 
     }
     else{
         informacion.style.color = "red";

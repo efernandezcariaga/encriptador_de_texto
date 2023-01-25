@@ -114,6 +114,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .seccion-der:focus{
@@ -159,7 +160,10 @@ main{
     cursor: pointer;
     height: 67px;
     width: 200px;
-    display: block;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .copiar:hover {
@@ -170,11 +174,11 @@ main{
 
 
 .footer-contenedor{
-    width: 100%;
-    height: 5%;
-    text-align: center;        
-    position: absolute; bottom: 0;
-    color: black;
-    font-size: 20px;
-    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self:flex-end ;
+    padding: 15px 0;
+    background: #D8DFE8;
 }
+

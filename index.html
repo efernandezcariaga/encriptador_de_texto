@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
 
+    <link rel="icon" type="image/png" href="Imagenes/icono.png">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -45,20 +46,26 @@
                     <h3>Ningun mensaje fue encontrado</h3>
                     <p>Ingrese el texto que desee encriptar o desencriptar</p>
                 </div>
-
-                <button class="copiar" onclick="copiarTexto()">Copiar</button>
             </div>
+            <button class="copiar" data-clipboard-target=".cajaMensaje" onclick="copiarTexto()">Copiar</button>
         </section>
-
-
 
     </main>
 
     <footer class="footer-contenedor">
-        <p class="footer-texto">- Todos los derechos reservados -</p>
+        <p class="footer-texto">&copy 2023 - Todos los derechos reservados  
+            <i class="fa-brands fa-linkedin" id="linkedin"></i>
+            <i class="fa-brands fa-github" id="github"></i>
+        </p>
     </footer>
 
 <script src="script.js"></script>
+<script src="clipboard.min.js"></script>
+<script src="https://kit.fontawesome.com/6f08c59482.js" crossorigin="anonymous"></script>
+
+<script>
+    var clipboard = new ClipboardJS(".copiar")
+</script>
 
 </body>
 
