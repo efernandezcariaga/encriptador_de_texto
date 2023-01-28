@@ -11,7 +11,7 @@ main{
     width: 100%;
     padding: 60px;
     background: #D8DFE8;
-    height: 100vh;
+    height: auto;
 
     gap: clamp(25px, 5vw, 4.6rem);
     justify-content: space-between;
@@ -203,6 +203,7 @@ main{
         align-self: stretch;
         gap: 2px;
         padding: 10px;
+        height: auto;
     }
 
     .logo{
@@ -277,6 +278,7 @@ main{
 @media screen and (max-width:550px){
     main{
         padding: 15px 30px;
+        height: auto;
     }
 
     .seccion-izq{
