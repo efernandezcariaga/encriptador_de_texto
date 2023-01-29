@@ -3,7 +3,7 @@
 <div align="center"><img src="Imagenes/logo-aluralatam-oracle.svg" width="200"/></div>
 <div align="center"><img src="Imagenes/rh03-one-v-black-lad2.png" width="100"/></div>
 
-<div align="center"><img src="Imagenes/foto_index.png" width="500" height="300">
+<div align="center"><img src="Imagenes/foto_index.png" width="500" height="300"></div>
 
 ---
 
